@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Lengkap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f7ff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      background: white;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #fd7fe2;
+    }
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .photo img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid #f18fc5;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    table td:first-child {
+      font-weight: bold;
+      color: #c25ba0;
+      width: 30%;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #7f8c8d;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #f197d6;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e681c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Biodata Lengkap</h1>
+    <div class="photo">
+      <img src="WhatsApp Image 2025-09-11 at 13.59.47.jpeg" alt="Foto Profil">
+    </div>
+    <table>
+      <tr>
+        <td>Nama Lengkap</td>
+        <td>Shelly Muthia Azzahra</td>
+      </tr>
+      <tr>
+        <td>Tempat, Tanggal Lahir</td>
+        <td>Garut, 26 juli 2008</td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>Perempuan</td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td>Samarang, Garut</td>
+      </tr>
+      <tr>
+        <td>Agama</td>
+        <td>Islam</td>
+      </tr>
+      <tr>
+        <td>Kewarganegaraan</td>
+        <td>Indonesia</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>shellymuthiaaz@email.com</td>
+      </tr>
+      <tr>
+        <td>No. HP</td>
+        <td>+62 895-3215-72601</td>
+      </tr>
+      <tr>
+        <td>Hobi</td>
+        <td>Lari, Basket, Ngonten</td>
+      </tr>
+    </table>
+    <button onclick="showMessage()">Tampilkan Pesan</button>
+    <p id="message" style="text-align:center; color:green; font-weight:bold;"></p>
+    <div class="footer">
+      &copy; 2025 Biodata by cecel
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "Terima kasih sudah melihat biodata saya!";
+    }
+  </script>
+</body>
+</html>
