@@ -19,42 +19,52 @@
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    h1, h2 {
+    h1 {
       text-align: center;
       color: #2c3e50;
     }
     .gallery {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
+      gap: 15px;
       margin: 20px 0;
     }
-    .gallery img {
+    .card {
+      text-align: center;
+    }
+    .card img {
       width: 100%;
       height: 120px;
       object-fit: cover;
       border-radius: 8px;
       border: 2px solid #ddd;
-      transition: transform 0.3s;
+      transition: transform 0.3s, border-color 0.3s;
     }
-    .gallery img:hover {
+    .card img:hover {
       transform: scale(1.05);
       border-color: #3498db;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-    table td {
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-    table td:first-child {
+
+    /* Desain tombol link */
+    .btn-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: linear-gradient(135deg, #3498db, #217dbb);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 15px;
       font-weight: bold;
-      color: #34495e;
-      width: 35%;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
     }
+    .btn-link:hover {
+      background: linear-gradient(135deg, #217dbb, #1b6699);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
     .footer {
       text-align: center;
       margin-top: 20px;
@@ -67,26 +77,32 @@
   <div class="container">
     <h1>Galeri Foto</h1>
     <div class="gallery">
-      <a href="biodata.html">
-  <img src="img/pp.jpeg" alt="Foto 1" width="200">
-  <button>Biodata Aghry</button>
-</a>
-      <a href="biodata.html">
-  <img src="img/" alt="Foto 1" width="200">
-  <button>Biodata .....</button>
-</a>
-<a href="biodata.html">
-  <img src="img/" alt="Foto 1" width="200">
-  <button>Biodata .....</button>
-</a>
-      <a href="biodata.html">
-  <img src="img/" alt="Foto 1" width="200">
-  <button>Biodata .....</button>
-</a>
-      <a href="biodata.html">
-  <img src="img/" alt="Foto 1" width="200">
-  <button>Biodata .....</button>
-</a>
+
+      <div class="card">
+        <img src="img/pp.jpeg" alt="Foto 1">
+        <a href="biodata.html" class="btn-link">📄 Biodata Aghry</a>
+      </div>
+
+      <div class="card">
+        <img src="img/foto2.jpg" alt="Foto 2">
+        <a href="biodata.html" class="btn-link">📄 Biodata Teman 2</a>
+      </div>
+
+      <div class="card">
+        <img src="img/foto3.jpg" alt="Foto 3">
+        <a href="biodata.html" class="btn-link">📄 Biodata Teman 3</a>
+      </div>
+
+      <div class="card">
+        <img src="img/foto4.jpg" alt="Foto 4">
+        <a href="biodata.html" class="btn-link">📄 Biodata Teman 4</a>
+      </div>
+
+      <div class="card">
+        <img src="img/foto5.jpg" alt="Foto 5">
+        <a href="biodata.html" class="btn-link">📄 Biodata Teman 5</a>
+      </div>
+
     </div>
     <div class="footer">
       &copy; 2025 Biodata by Aghry
